@@ -1,24 +1,48 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//import new stuff
+import { JumbotronMaker } from "./JumbotronMaker";
+import { CardMaker } from "./CardMaker";
+import { NavbarMaker } from "./NavbarMaker";
 
 //create your first component
 export function Home() {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="mx-5 my-2">
+			<div>
+				<NavbarMaker />{" "}
+			</div>
+
+			<JumbotronMaker title="woohoo" />
+			<div className="d-flex justify-content-between">
+				<CardMaker
+					title="title uno!"
+					img="https://place-hold.it/500x325"
+					text=""
+					href=""
+					buttonLabel=""
+				/>
+				<CardMaker
+					title="title two!"
+					img="https://place-hold.it/500x325"
+					text=""
+					href=""
+					buttonLabel=""
+				/>
+				<CardMaker
+					title="title troi!"
+					img="https://place-hold.it/500x325"
+					text=""
+					href=""
+					buttonLabel=""
+				/>
+				<CardMaker
+					title="title shi!"
+					img="https://place-hold.it/500x325"
+					text=""
+					href=""
+					buttonLabel=""
+				/>
+			</div>
 		</div>
 	);
 }
