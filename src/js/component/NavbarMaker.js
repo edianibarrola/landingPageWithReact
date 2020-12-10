@@ -13,7 +13,7 @@ export const NavbarMaker = props => {
 					</span>
 				</div>
 			</div>
-			<nav className="navbar navbar-dark bg-dark">
+			<nav className="navbar fixed-top navbar-dark bg-dark">
 				<button
 					className="navbar-toggler"
 					type="button"

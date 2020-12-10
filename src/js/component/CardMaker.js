@@ -13,6 +13,8 @@ export const CardMaker = props => {
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
 				<p className="card-text">{props.text}</p>
+			</div>
+			<div className="card-footer text-center">
 				<a href={props.href} className="btn btn-primary">
 					{props.buttonLabel}
 				</a>
